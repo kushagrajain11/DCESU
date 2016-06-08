@@ -1,0 +1,46 @@
+main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+main > section{
+	height: 500px;
+}
+
+#interviews, #updates, #festivals{
+	flex: 0 0 30%;
+}
+
+#updates{
+	background-color: blue;
+}
+
+#festivals{
+	background-color: pink;
+}
+
+#links{
+	flex: 1 0 100%;
+	ackground-color: green;
+}
+
+#interviews, #festivals, #updates{
+	background-color: rgba(220, 220, 220, 0.3);
+	padding: 15px;
+}
+
+#interviews > h1, #festivals > h1, #updates > h1{
+	width: 90%;
+	height: 50px;
+	color: rgb(40, 40, 40);
+	padding-left: 10px;
+	font-weight: normal;
+	line-height: 45px;
+	margin: 0 auto;
+	font-size: 23px;
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid rgb(150, 150, 150);
+	margin-bottom: 30px;
+}

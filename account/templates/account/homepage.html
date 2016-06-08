@@ -1,0 +1,166 @@
+{% extends 'common/base.html' %}
+{% load staticfiles %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/mainHeader.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/navigation.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/sections.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/interviews.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/festivals.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/links.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'account/css/homepage/700to850px.css' %}">
+{% endblock %}
+
+{% block body %}
+<div id = "container"> 
+	<header id = "mainHeader">
+		<img src="{% static 'account/images/logo.png' %}" id = "logo">
+		<div>
+			Delhi Technological University
+			<br>
+			[Formerly - Delhi College of Engineering]
+		</div>
+
+		<ul>
+			<li> <a href = "#"> Login		</a> </li>
+			<li> <a href = "#"> Sign Up 	</a> </li>
+		</ul>
+	</header>
+
+	<ul id = "topNavigation">
+		<li> <a href = "#"> Home		</a> 	</li>
+		<li> About			</li>
+		<li> 
+			Departments 					
+		
+			<ul id = "depList">
+				<li> Applied Chemistry 				</li>
+				<li> Applied Mathematics 			</li>
+				<li> Applied Physics 				</li>
+				<li> Biotechnology 					</li>
+				<li> Civil Engineering 				</li>
+				<li> Computer Engineering 			</li>
+				<li> Electronics and Comm.		 	</li>
+				<li> Electrical Engineering 		</li>
+				<li> Environmental Engineering 		</li>
+				<li> Mechanical Engineering 		</li>
+			</ul>
+		
+	</li>
+	<li> 
+		Societies 	
+<!--
+			<ul id = "socList">
+				<li> CSI-DTU	</li>
+				<li> IEEE		</li>
+				<li> SR-DTU 	</li>
+				<li> Sahitya	</li>
+				<li> ASCE		</li>
+				<li> ASME		</li>
+				<li> SSE 		</li>
+				<li> SITE 		</li>
+				<li> Madhurima 	</li>
+				<li> Pratibimb 	</li>
+				<li> Kalakriti 	</li>
+			</ul>
+		-->
+	</li>			
+	<li> 
+		Facilities		
+<!--
+		<ul id = "facList">
+			<li> EDUSAT Hub 		</li>
+			<li> Central Library 	</li>
+			<li> Computer Centre 	</li>
+			<li> Bank 				</li>
+			<li> Hostels 			</li>
+			<li> Guest House		</li>
+			<li> Gymnasium 			</li>
+			<li> Health Centre 		</li>
+		</ul>
+	-->
+</li>
+<li> Resources 		</li>
+<li> Contact Us 	</li>
+</ul>
+
+<div id = "carousel">		
+	<img src="{% static 'account/images/carousel/1.jpg' %}">		<!-- To setup the div size, not in carousel. -->
+	<img src="{% static 'account/images/carousel/1.jpg' %}">
+	<img src="{% static 'account/images/carousel/2.jpg' %}">
+	<img src="{% static 'account/images/carousel/3.jpg' %}">
+	<img src="{% static 'account/images/carousel/4.jpg' %}">
+	<img src="{% static 'account/images/carousel/5.jpg' %}">
+	<img src="{% static 'account/images/carousel/6.jpg' %}">
+	<img src="{% static 'account/images/carousel/7.jpg' %}">
+	<img src="{% static 'account/images/carousel/8.jpg' %}">
+</div>
+
+<main>
+	<section id = "interviews">			
+		<h1> <i class="fa fa-users" aria-hidden="true"></i> Interviews </h1>
+		<ul>
+			<marquee id = "intMarquee" direction = "up" onMouseEnter = "this.stop()" onMouseLeave = "this.start()" scrollamount = "5">
+				<li>
+					<a href="#">
+						<img src="{% static 'account/images/user.jpg' %}">
+						<div> Varun Kashyap </div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="{% static 'account/images/user.jpg' %}">
+						<div> Varun Kashyap </div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="{% static 'account/images/user.jpg' %}">
+						<div> Varun Kashyap </div>
+					</a>
+				</li>
+			</marquee>
+		</ul>
+	</section>
+
+	<section id = "festivals">
+		<h1> Festivals </h1>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="{% static 'account/images/engilogo.jpg' %}">
+					<div> Engifest - The Annual Cultural Festival </div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="{% static 'account/images/engilogo.jpg' %}">
+					<div> Annual Techno-Management Festival </div>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section id = "updates">
+		<h1> <i class="fa fa-tags" aria-hidden="true"></i> Updates </h1>
+	</section>
+
+	<section id = "links">
+		<h1> <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp Important Links :- </h1>
+		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDceSpeaksUp%2F%3Ffref%3Dts%26ref%3Dbr_tf&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" scrolling="no" frameborder="0" allowTransparency="true" id = "likebox"></iframe>	
+
+	</section>
+</main>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src = "{% static 'account/js/carousel.js' %}"></script>
+<script type="text/javascript">
+	var obj = {
+		'id' : 'carousel',
+	};
+	carousel.init(obj);
+</script>
+{% endblock %}

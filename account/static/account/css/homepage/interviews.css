@@ -1,0 +1,26 @@
+#interviews ul{
+	display: flex;
+	flex-direction: column;
+	height: 370px;
+	overflow: hidden;
+}
+
+#intMarquee li{
+	width: 70%;
+	margin: 0 auto;
+	padding: 70px 0 50px 0;
+	text-align: center;
+	border-bottom: 1px solid black;
+	ackground-color: red;
+}
+
+#intMarquee img{
+	width: 100%;
+}
+
+#intMarquee div{
+	color: black;
+	font-size: 18px;
+	margin-top: 10px;
+	ackground-color: blue;
+}

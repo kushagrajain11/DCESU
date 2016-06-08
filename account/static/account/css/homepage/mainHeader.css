@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: arial;
+	olor: white;
+	text-decoration: none;
+}
+
+#container, 
+#mainHeader > div, 
+#mainHeader > ul > li > a, 
+#topNavigation, 
+#interviews > h1, 
+#festivals > h1, 
+#updates > h1{
+	transition: 1s;
+}
+
+#container{
+	width: 850px;
+	margin: 0 auto;
+}
+
+#logo{
+	flex: 0 0 60px;
+	height: 60px;
+}
+
+#mainHeader{
+	position: relative;
+	height: 80px;
+	width: 100%;
+	
+	display: flex;
+	align-items: center;
+	color: white;
+	background-color: rgb(20, 20, 30);
+	padding: 10px;
+	border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+#mainHeader > div{
+	width: 400px;
+	margin-left: 15px;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+#mainHeader > ul{
+	position: absolute;
+	right: 40px;
+	top: 25px;
+	width: 120px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#mainHeader > ul > li > a{
+	color: white;
+	font-size: 15px;
+}
+#mainHeader > ul > li > a:hover{
+	font-style: italic;
+}

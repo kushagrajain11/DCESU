@@ -1,0 +1,55 @@
+@media screen and (max-width: 870px){
+	#container{
+		width: 650px;
+	}
+
+	#mainHeader > div{
+		font-size: 17px;
+	}
+
+	#mainHeader > ul > li > a{
+		font-size: 14px;
+	}
+
+
+	#topNavigation{
+		height: 40px;
+	}
+
+	#topNavigation > li{
+		font-size: 13px;
+		line-height: 40px;
+	}
+
+	#depList, #socList, #facList{
+		width: 210px;
+		top: 40px;
+	}
+
+	#depList > li, #socList > li, #facList > li{
+		font-size: 12px;
+		line-height: 40px;
+	}
+
+	#topNavigation > li:hover > ul > li{
+		height: 45px;
+	}
+
+
+	#interviews > h1, #festivals > h1, #updates > h1{
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+		padding-left: 5px;
+	}
+
+	#intMarquee div{
+		font-size: 16px;
+		margin-top: 6px;
+	}
+
+
+	#festivals li div{
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,84 @@
+#topNavigation a, #topNavigation li{
+	display: block;
+	height: 100%;
+	color: rgb(200, 200, 200);
+}
+
+#topNavigation{
+	display: flex;
+	align-items: center;
+	height: 45px;
+	justify-content: space-between;
+	background-color: rgb(20, 20, 30);
+}
+
+#topNavigation > li{
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	flex: 1 0 0;
+	text-align: center;
+	line-height: 45px;
+	transition: 0.7s;
+	cursor: pointer;
+	border-right: 1px solid rgb(150, 150, 150);
+	font-size: 15px;
+}
+
+#topNavigation > li:last-child{
+	border-right: none;
+}
+
+#topNavigation > li:hover{
+	background-color: rgb(30, 30, 45);
+	font-style: italic;
+	color: white;
+}
+
+#topNavigation > li:hover > ul > li{
+	height: 50px;
+}
+
+#topNavigation > li:hover > ul{
+	opacity: 1;
+}
+
+#depList, #socList, #facList{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	text-align: left;
+	width: 230px;
+	opacity: 0;
+	padding: 0 20px;
+	font-style: normal;
+	background-color: rgb(30, 30, 45);
+	box-shadow: 2px 2px 2px grey;
+	z-index: 10;
+	transition: 0.7s;
+}
+
+#depList > li, #socList > li, #facList > li{
+	height: 0px;
+	font-size: 13.5px;
+	letter-spacing: 0.5px;
+	line-height: 45px;
+	padding-left: 2px;
+	border-bottom: 1px dotted rgb(150, 150, 150);
+	transition: 0.7s;
+}
+
+#depList > li:last-child, 
+#socList > li:last-child, 
+#facList > li:last-child, 
+#depList > li:last-child:hover, 
+#socList > li:last-child:hover, 
+#facList > li:last-child:hover{
+	border-bottom: none;
+}
+
+#depList > li:hover, #socList > li:hover, #facList > li:hover{
+	font-style: italic;
+	color: white;
+	border-bottom: 1px solid white;
+}

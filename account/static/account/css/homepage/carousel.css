@@ -1,0 +1,18 @@
+#carousel{
+	position: relative;
+	border-bottom: 2.5px solid rgb(250, 50, 0);
+	border-top: 2.5px solid rgb(250, 50, 0);
+	overflow: hidden;
+	margin: 0 0 25px 0;
+}
+
+#carousel > img{
+	position: absolute;
+	width: 100%;
+	transition: 1s;
+}
+
+#carousel > img:first-child{
+	position: static;
+	opacity: 0;
+}

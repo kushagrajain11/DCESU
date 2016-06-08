@@ -1,0 +1,22 @@
+#links{
+	background-color: rgb(20, 20, 30);
+	margin-top: 50px;
+	padding: 20px;
+}
+
+#links > h1{
+	color: rgb(220, 220, 220);
+	font-weight: normal;
+	font-size: 25px;
+	border-bottom: 1px solid white;
+	padding-left: 15px;
+	ackground-color: red;
+	height: 50px;
+	line-height: 45px;
+}
+
+#likebox{
+	height: 250px;
+	border: 1px solid white;
+	overflow: hidden;
+}
